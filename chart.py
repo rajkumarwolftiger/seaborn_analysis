@@ -51,5 +51,8 @@ ax.set_title('Customer Support Response Time Distribution', fontsize=16, weight=
 ax.set_xlabel('Support Channel', fontsize=12)
 ax.set_ylabel('Response Time (Minutes)', fontsize=12)
 
+# Adjust layout to prevent labels from being cut off
+plt.tight_layout()
+
 # Save chart: Use plt.savefig() with exactly 512x512 pixel dimensions
-plt.savefig('chart.png', dpi=64, bbox_inches='tight')
+plt.savefig('chart.png', dpi=64)
